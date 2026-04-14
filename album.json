@@ -3,7 +3,6 @@
   "artist": "Pink Floyd",
   "year": 1973,
   "genre": ["rock", "progressive rock"],
-
   "totalTracks": 10,
   "duration": "42.57",
   "tracks": [
