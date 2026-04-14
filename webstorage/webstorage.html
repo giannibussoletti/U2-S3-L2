@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+
+    <style>
+      body {
+        max-width: 992px;
+        margin: 0 auto;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="p-3">
+    <header>
+      <header>
+        <h1>Web Storage API</h1>
+      </header>
+    </header>
+    <main>
+      <section>
+        Entrambi i motori memorizzano le informazioni a livello di DOMINIO, quindi ogni "sito" può
+        solamente interagire con la tabella di local/session relativa a se stesso.
+        <h3>Local Storage</h3>
+        <p>
+          LocalStorage è un motore di memorizzazione dati presente in tutti i browsers moderni che
+          permette di memorizzare un piccolo quantitativo di dati (~5MB) per dominio al fine di
+          salvare in locale delle informazioni per migliorare l'esperienza utente (temi, login,
+          preferenze). Questi dati sono esposti all'utente e possono essere eliminati in qualsiasi
+          momento, non bisogna farci affidamento cieco per la funzione della webapp.
+        </p>
+
+        <h3>Session Storage</h3>
+        <p>
+          Il suo funzionamento è identico a Local Storage, l'unica differenza è che i suoi dati
+          vengono cancellati una volta che la tab del broswer viene chiusa. Questo permete di avere
+          la certezza che le informazioni salvate durante la sessione corrente wencano
+          autmaticamente distrutti all'uscita(log out automatico banca, chiusura sessioni SPID,
+          etc.)
+        </p>
+      </section>
+      <section>
+        <div>
+          <h4>Local Storage</h4>
+          <div>
+            <button onclick="localStorageSave()" class="btn btn-primary mb-3 text-uppercase">
+              Salva in local storage
+            </button>
+          </div>
+          <div>
+            <button onclick="localStorageRead()" class="btn btn-info text-uppercase">
+              Leggi local storage
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="./webstorage.js"></script>
+  </body>
+</html>
