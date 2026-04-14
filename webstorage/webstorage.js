@@ -38,3 +38,6 @@ const localStorageRead = function () {
   //   localStorage.clear() // cancella tutto dal local storage
   localStorage.removeItem("oggetto") // elimino l'oggetto complesso
 }
+
+// FALSY -> undefined, null, '', 0, -0, NaN
+// TRUTHY -> tutto il resto
