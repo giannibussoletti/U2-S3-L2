@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Gianni",
+    "lastName": "Rossi",
+    "age": "32",
+    "country": "IT",
+    "canDrive": true,
+    "hobbies": ["Videogaming", "Reading"]
+  },
+  {
+    "firstName": "Marco",
+    "lastName": "Florenzi",
+    "age": "25",
+    "country": "SP",
+    "canDrive": false,
+    "hobbies": ["Music", "Movies"]
+  }
+]
